@@ -23,7 +23,7 @@ n = int(input("Digite o seu n: "))
 p = float(input("Digite o seu p (em decimal): "))
 x = int(input("Digite o seu x: "))
 q = (1 - p)
-print(q)
 c = combinacao(n,x)
-print(c)
+binomial_individual = (c * (p ** (x)) * (q ** (n - x))) * 100 
+print("Probabilidade Binomial Individual: %0.2f%%"%binomial_individual)
 
